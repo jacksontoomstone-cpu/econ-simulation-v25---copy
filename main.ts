@@ -574,7 +574,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.tendollars, function (sprite, ot
         pause(100)
         music.play(music.melodyPlayable(music.sonar), music.PlaybackMode.InBackground)
         alien_customer_green_guy.follow(follow_square, 50)
-        pause(7000)
+        pause(3000)
         _010 = sprites.create(img`
             . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . 
@@ -633,9 +633,8 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.tendollars, function (sprite, ot
             ..................................
             `, SpriteKind.revenue)
         revenue_earned_10_dollars.setPosition(140, 59)
-        pause(2000)
+        pause(1500)
         revenue_earned_10_dollars.setPosition(1000, 1000)
-        pause(500)
         result_10 = sprites.create(img`
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -656,8 +655,8 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.tendollars, function (sprite, ot
             `, SpriteKind.result)
         result_10.setPosition(59, 125)
         pause(1000)
-        result_10.sayText("You sold 0 units and made 0$ try another price", 3000, false)
-        pause(6000)
+        result_10.sayText("You sold 0 units and made $0 try another price", 3000, false)
+        pause(2000)
         _1_dollar.setImage(img`
             66666666666666666666666666666
             666f6f66666666666666666666666
@@ -2298,7 +2297,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         ........................
         ........................
         ........................
-        `, SpriteKind.Enemy)
+        `, SpriteKind.triggerenemy)
     alien_customer_green_guy.setPosition(115, 50)
     alien_customer_red_guy = sprites.create(img`
         ........................
@@ -2379,7 +2378,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         ........................
         ........................
         ........................
-        `, SpriteKind.triggerenemy)
+        `, SpriteKind.Enemy)
     alien_customer_pink_guy.setPosition(77, 55)
     follow_square = sprites.create(img`
         .....ffffffffff.....
@@ -2513,7 +2512,6 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     pizza_4.setPosition(146, 85)
 })
 sprites.onOverlap(SpriteKind.triggerenemy, SpriteKind.followsquare, function (sprite, otherSprite) {
-    pause(5000)
     follow_square.setImage(img`
         .....ffffffffff.....
         ....fbbb7777bbbf....
@@ -2643,7 +2641,7 @@ sprites.onOverlap(SpriteKind.triggerenemy, SpriteKind.followsquare, function (sp
             `)
         pause(50)
         follow_square.vy += -35
-        pause(7000)
+        pause(4000)
         follow_square.setImage(img`
             .....ffffffffff.....
             ....fbbb7777bbbf....
@@ -2667,7 +2665,7 @@ sprites.onOverlap(SpriteKind.triggerenemy, SpriteKind.followsquare, function (sp
             ....................
             `)
         follow_square.vy += 35
-        follow_square.setPosition(15, 54)
+        follow_square.setPosition(15, 50)
     }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.twodollar, function (sprite, otherSprite) {
@@ -3381,7 +3379,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.twodollar, function (sprite, oth
         pause(100)
         music.play(music.melodyPlayable(music.sonar), music.PlaybackMode.InBackground)
         alien_customer_green_guy.follow(follow_square, 50)
-        pause(4000)
+        pause(3000)
         _32 = sprites.create(img`
             . . . . . . . f . . . . . . . 
             . . . . . . . f . . . . . . . 
@@ -3440,9 +3438,8 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.twodollar, function (sprite, oth
             ..................................
             `, SpriteKind.revenue)
         revenue_earned_32.setPosition(141, 59)
-        pause(2000)
+        pause(1500)
         revenue_earned_32.setPosition(1000, 1000)
-        pause(500)
         result_2 = sprites.create(img`
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -3461,9 +3458,9 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.twodollar, function (sprite, oth
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             `, SpriteKind.Player)
-        result_2.sayText("You sold 3 unit and made 6$. Try another price", 3000, false)
+        result_2.sayText("You sold 3 unit and made $6. Try another price", 3000, false)
         result_2.setPosition(59, 125)
-        pause(6000)
+        pause(2000)
         _1_dollar.setImage(img`
             66666666666666666666666666666
             666f6f66666666666666666666666
@@ -7934,7 +7931,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.fourdollar, function (sprite, ot
         pause(100)
         music.play(music.melodyPlayable(music.sonar), music.PlaybackMode.InBackground)
         alien_customer_green_guy.follow(follow_square, 50)
-        pause(7000)
+        pause(3000)
         _14 = sprites.create(img`
             . . . . . . . f . . . . . . . 
             . . . . . . . f . . . . . . . 
@@ -7994,9 +7991,8 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.fourdollar, function (sprite, ot
             ..................................
             `, SpriteKind.revenue)
         revenue_earned_14.setPosition(141, 59)
-        pause(2000)
+        pause(1500)
         revenue_earned_14.setPosition(1000, 1000)
-        pause(500)
         result_4 = sprites.create(img`
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -8015,9 +8011,9 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.fourdollar, function (sprite, ot
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             `, SpriteKind.Player)
-        result_4.sayText("You sold 1 unit and made 4$. Try another price", 3000, false)
+        result_4.sayText("You sold 1 unit and made $4. Try another price", 3000, false)
         result_4.setPosition(59, 125)
-        pause(6000)
+        pause(2000)
         _1_dollar.setImage(img`
             66666666666666666666666666666
             666f6f66666666666666666666666
@@ -8732,6 +8728,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.onedollar, function (sprite, oth
         pause(500)
         alien_customer_green_guy.setPosition(63, 64)
         pause(500)
+        music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.UntilDone)
         gain_1_dollar.setImage(img`
             ......................
             ...fffff..............
@@ -8756,7 +8753,6 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.onedollar, function (sprite, oth
             ......................
             ......................
             `)
-        music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.UntilDone)
         gain_1_dollar.setPosition(63, 50)
         pizza_4.setPosition(1000, 85)
         pause(50)
@@ -8955,9 +8951,8 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.onedollar, function (sprite, oth
             ..................................
             `, SpriteKind.revenue)
         revenue_earned_41.setPosition(141, 59)
-        pause(2000)
+        pause(1500)
         revenue_earned_41.setPosition(1000, 1000)
-        pause(1000)
         result_1 = sprites.create(img`
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -8976,9 +8971,9 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.onedollar, function (sprite, oth
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             `, SpriteKind.Player)
-        result_1.sayText("You sold 4 units and made 4$. Try another price", 3000, false)
+        result_1.sayText("You sold 4 units and made $4. Try another price", 3000, false)
         result_1.setPosition(59, 125)
-        pause(4000)
+        pause(2000)
         _1_dollar.setImage(img`
             66666666666666666666666666666
             666f6f66666666666666666666666
@@ -9748,7 +9743,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.threedollar, function (sprite, o
         pause(100)
         music.play(music.melodyPlayable(music.sonar), music.PlaybackMode.InBackground)
         alien_customer_green_guy.follow(follow_square, 50)
-        pause(7000)
+        pause(3000)
         _23 = sprites.create(img`
             . . . . . . . f . . . . . . . 
             . . . . . . . f . . . . . . . 
@@ -9807,9 +9802,8 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.threedollar, function (sprite, o
             ..................................
             `, SpriteKind.revenue)
         revenue_earned_23.setPosition(141, 59)
-        pause(2000)
+        pause(1500)
         revenue_earned_23.setPosition(1000, 1000)
-        pause(500)
         result_3 = sprites.create(img`
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -9828,9 +9822,9 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.threedollar, function (sprite, o
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
             `, SpriteKind.Player)
-        result_3.sayText("You sold 2 unit and made 6$. Try another price", 3000, false)
+        result_3.sayText("You sold 2 unit and made $6. Try another price", 3000, false)
         result_3.setPosition(59, 125)
-        pause(6000)
+        pause(2000)
         _1_dollar.setImage(img`
             66666666666666666666666666666
             666f6f66666666666666666666666
@@ -10508,7 +10502,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.fivedollar, function (sprite, ot
         pause(100)
         music.play(music.melodyPlayable(music.sonar), music.PlaybackMode.InBackground)
         alien_customer_green_guy.follow(follow_square, 50)
-        pause(7000)
+        pause(3000)
         _05 = sprites.create(img`
             . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . 
@@ -10567,9 +10561,8 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.fivedollar, function (sprite, ot
             ..................................
             `, SpriteKind.revenue)
         revenue_earned_5_dollar.setPosition(140, 59)
-        pause(2000)
+        pause(1500)
         revenue_earned_5_dollar.setPosition(1000, 1000)
-        pause(500)
         result_5 = sprites.create(img`
             . . . . . . . . . . . . . . . . 
             . . . . . . . . . . . . . . . . 
@@ -10590,8 +10583,8 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.fivedollar, function (sprite, ot
             `, SpriteKind.result)
         result_5.setPosition(59, 125)
         pause(1000)
-        result_5.sayText("You sold 0 units and made 0$ try another price", 3000, false)
-        pause(6000)
+        result_5.sayText("You sold 0 units and made $0 try another price", 3000, false)
+        pause(2000)
         _1_dollar.setImage(img`
             66666666666666666666666666666
             666f6f66666666666666666666666
